@@ -1,0 +1,147 @@
+.hero-banner {
+    height: 633px;
+    margin: 0 70px;
+    border-radius: 26px;
+    padding: 109px 123px;
+    background-image: url("/assets/images/banner/hero-banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner .hero-banner__content {
+    z-index: 11;
+    position: relative;
+    max-width: 700px;
+}
+
+.hero-banner .hero-banner__content h1 {
+    color: #1e1e1e;
+    font-family: Forum;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 87px;
+}
+.hero-banner .hero-banner__content h5 {
+    margin-top: 15px;
+    margin-bottom: 48px;
+    color: #393939;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.hero-bg__title {
+    margin-top: 15px;
+    margin-bottom: 48px;
+    font-family: Bodoni;
+    font-weight: 700;
+    color: #1e1e1e;
+    font-size: 678px;
+    line-height: 810px;
+    position: absolute;
+    bottom: -150px;
+    left: 300px;
+    pointer-events: none;
+    opacity: 0.05;
+}
+
+.hero-banner .hero-banner__content .sub-text {
+    margin-top: 15px;
+    margin-bottom: 48px;
+    color: #393939;
+    font-size: 32px;
+    line-height: 134%;
+}
+
+.hero-banner .banner-item-1 {
+    position: absolute;
+    right: 380px;
+    bottom: 50px;
+    width: 261px;
+    height: 325px;
+    z-index: 10;
+}
+.hero-banner .banner-item-2 {
+    position: absolute;
+    right: 190px;
+    bottom: 50px;
+    width: 352px;
+    height: 516px;
+    z-index: 10;
+}
+.hero-banner .banner-item-3 {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 865px;
+    height: 580px;
+}
+
+@media (max-width: 1120px) {
+    .hero-banner__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .points {
+        display: flex;
+    }
+}
+
+@media (max-width: 765px) {
+    .hero-banner {
+        padding: 80px 15px;
+        display: flex;
+        flex-direction: column;
+        height: 764px;
+    }
+    .hero-banner .hero-banner__content h1 {
+        font-size: 68px;
+        line-height: 76px;
+    }
+    .hero-banner .hero-banner__content h5 {
+        margin-top: 22px;
+        font-size: 28px;
+        line-height: 44px;
+    }
+    .hero-banner .hero-banner__content button {
+        width: 100%;
+    }
+    .hero-bg__title {
+        transform: rotate(90deg);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 500px;
+    }
+    .alert-banner__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .points {
+        display: flex;
+    }
+    .hero-banner .banner-item-1 {
+        width: 141px;
+        height: 185px;
+        bottom: 15px;
+        left: 140px;
+    }
+    .hero-banner .banner-item-2 {
+        width: 190px;
+        height: 280px;
+        right: 140px;
+        bottom: 10px;
+    }
+    .hero-banner .banner-item-3 {
+        width: 865px;
+        height: 460px;
+    }
+}

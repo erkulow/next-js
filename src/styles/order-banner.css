@@ -1,0 +1,103 @@
+.order-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 570px;
+    margin-bottom: 57px;
+    padding: 128px 80px 128px 135px;
+    background-image: url("/assets/images/banner/order-banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.order-banner__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 770px;
+    height: 544px;
+    z-index: 10;
+}
+.order-banner .order-banner__title {
+    z-index: 11;
+    position: relative;
+}
+.order-banner .order-banner__title h1 {
+    color: #1e1e1e;
+    font-family: Forum;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 46px;
+}
+.order-banner .order-banner__title h5 {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    color: #393939;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    line-height: 23px;
+}
+.order-banner .order-banner__description h5 {
+    z-index: 11;
+    max-width: 340px;
+    position: relative;
+    color: #393939;
+    font-family: Museo Sans Cyrl, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 35px;
+}
+
+@media (max-width: 1800px) {
+    .order-banner__image {
+        width: 680px;
+        height: 500px;
+        z-index: 10;
+    }
+    .order-banner .order-banner__title {
+        z-index: 11;
+    }
+    .order-banner .order-banner__description {
+        z-index: 11;
+    }
+}
+
+@media (max-width: 1615px) {
+    .order-banner {
+        padding: 128px 0 128px 50px;
+    }
+    .order-banner__image {
+        width: 600px;
+        height: 420px;
+    }
+}
+@media (max-width: 1295px) {
+    .order-banner {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 0 128px 50px;
+        height: 900px;
+    }
+    .order-banner__image {
+        width: 600px;
+        height: 420px;
+    }
+    .order-banner .order-banner__description {
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
+    .order-banner {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 15px;
+        height: 900px;
+    }
+    .order-banner .order-banner__title button {
+        width: 100%;
+    }
+}
